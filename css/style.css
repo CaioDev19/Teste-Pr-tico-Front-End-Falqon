@@ -1,0 +1,397 @@
+@import url("./typography.css");
+@import url("./layout.css");
+@import url("./color.css");
+
+:root {
+  --purple: #aab5e0;
+  --purple-100: #7b1fa2;
+  --purple-200: #4527a0;
+  --purple-300: #431c60;
+  --blue: #4527a0;
+  --light-blue: #5371e6;
+  --white: #fff;
+  --black: #272727;
+  --grey: #8b8b8b;
+  --green: #8bc34a;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Ruda", sans-serif;
+}
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: var(--purple-300);
+  padding: 1.25rem 1rem;
+}
+.navbar__content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.25rem;
+}
+.navbar__content__img {
+  width: 16px;
+  height: 16px;
+}
+.navbar__content__img--larger {
+  width: 22px;
+  height: 22px;
+}
+.navbar__content__img--active {
+  fill: var(--white);
+}
+.navbar__content__img--inactive {
+  fill: var(--grey);
+}
+.main-container {
+  min-height: 100vh;
+  background-color: var(--purple-300);
+  position: relative;
+  padding: 7rem 0;
+  color: var(--white);
+}
+.main-container__banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 378px;
+  z-index: 1;
+  object-fit: cover;
+}
+.main-container__content {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.overlay {
+  background-color: #000;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.overlay--stronger {
+  opacity: 0.8;
+}
+.boarding-pass {
+  border-radius: 2px;
+  background: transparent;
+  height: 278px;
+  position: relative;
+}
+.boarding-pass__overlay {
+  opacity: 0.9;
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.53));
+  background-color: var(--black);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.boarding-pass__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.boarding-pass__content__info {
+  width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.boarding-pass__content__info__img {
+  width: 34px;
+  height: 34px;
+  rotate: 45deg;
+  position: relative;
+  top: 0.35rem;
+}
+.boarding-pass__content__info__button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  background-color: var(--purple-300);
+  border-radius: 2px;
+  padding: 0.75rem 2.15rem;
+}
+.boarding-pass__content__info__upper {
+  border-bottom: 0.1px solid var(--grey);
+  padding-bottom: 1rem;
+}
+.boarding-pass__content__info__lower {
+  width: 83%;
+  margin: 0 auto;
+}
+.boarding-pass__button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+  opacity: 1;
+  width: 100%;
+  flex-grow: 1;
+
+  border-radius: 2px;
+  padding: 0.25rem 0.8rem;
+}
+.boarding-pass__button--active {
+  background-color: var(--green);
+}
+.boarding-pass__button--inactive {
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plans {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.plans__hotel {
+  padding-top: 1.45rem;
+  position: relative;
+}
+.plans__hotel__card {
+  background-color: var(--black);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  padding-bottom: 1.25rem;
+  min-height: 280px;
+}
+.plans__hotel__card__info {
+  width: 87%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.plans__hotel__card__info__button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  background: var(--purple-100);
+  background: linear-gradient(
+    -139deg,
+    var(--purple-100) 0%,
+    var(--purple-200) 100%
+  );
+  border-radius: 2px;
+  padding: 0.25rem 0.7rem;
+}
+.plans__hotel__card__img {
+  background-image: url("../assets/Hotel\ Image.png");
+  background-size: cover;
+  background-position: top;
+  min-height: 180px;
+}
+.plans__hotel__card__img--secondary {
+  background-image: url("../assets/mariano-rossi-3.png");
+}
+.plans__hotel__add-button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  width: 56px;
+  height: 56px;
+  background-color: var(--purple-100);
+  border-radius: 50%;
+  position: absolute;
+  top: 0.8rem;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plans__hotel__add-button span {
+  font-size: 1.8rem;
+}
+.plans__transportation {
+  background-image: url("../assets/why-kei-51455.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+
+  min-height: 300px;
+  padding: 2.15rem 0;
+}
+.plans__transportation__content {
+  width: 87%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.plans__transportation__img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.plans__transportation__step {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 1.25rem;
+  width: 100%;
+}
+.plans__transportation__step__circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  padding: 0.25rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plans__transportation__step__circle--active {
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 50%;
+  background-color: var(--purple-100);
+}
+.plans__transportation__step__circle--inactive {
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 50%;
+  background-color: var(--purple);
+}
+.plans__transportation__step__circle__separator {
+  width: 1px;
+  height: 80px;
+  background-color: var(--white);
+}
+.plans__transportation__step__edit {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+  background-color: var(--purple-100);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plans__transportation__step__edit__img {
+  width: 15px;
+  height: 15px;
+}
+.plans__request__card {
+  border-radius: 2px;
+  background-color: var(--purple-100);
+  background: linear-gradient(
+    -136deg,
+    var(--purple-100) 0%,
+    var(--purple-200) 100%
+  );
+}
+.plans__request-card__content {
+  width: 87%;
+  margin: 0 auto;
+  padding: 1.25rem 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+.plans__request-card__content__input-container {
+  position: relative;
+}
+.plans__request-card__content__input-message {
+  position: absolute;
+  top: 1.15rem;
+  left: 1rem;
+}
+.plans__request-card__content__input {
+  border: none;
+  width: 100%;
+  padding: 1rem 0;
+  padding-left: 4rem;
+  padding-right: 2rem;
+}
+.plans__request-card__content__input::placeholder {
+  color: var(--purple-300);
+  font-size: 0.8rem;
+}
+.plans__request-card__content__input:focus {
+  border: 1px solid var(--black);
+}
+.plans__request-card__content__icon {
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plans__request-card__content__icon--purple-100 {
+  background-color: var(--purple-100);
+}
+.plans__request-card__content__icon--purple {
+  background-color: var(--purple);
+}
+.plans__request-card__content__icon--blue {
+  background-color: var(--light-blue);
+}
+.plans__request-card__content__icon--grey {
+  background-color: var(--grey);
+}
+.plans__request-card__content__icon img {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+.line {
+  width: 100%;
+  min-width: 30px;
+  height: 2px;
+  background-color: var(--white);
+  opacity: 0.2;
+}
+@media (min-width: 1000px) {
+  .plans__hotel__card__img {
+    min-height: 500px;
+  }
+}

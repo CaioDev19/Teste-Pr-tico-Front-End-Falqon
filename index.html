@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ruda:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Falqon Challenge</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <img
+        class="main-container__banner"
+        src="./assets/Overlay.png"
+        alt="building"
+      />
+      <div class="overlay"></div>
+      <main class="main-container__content">
+        <h1 class="title title--weak">
+          Let's get <br />
+          you there...
+        </h1>
+        <section class="boarding-pass">
+          <div class="boarding-pass__overlay"></div>
+          <div class="boarding-pass__content">
+            <div
+              class="flex-row flex-row--center flex-row--align-center"
+            >
+              <button
+                class="boarding-pass__button boarding-pass__button--active"
+              >
+                <span class="text--extra-small">BOARDING NOW</span>
+              </button>
+              <button
+                class="boarding-pass__button boarding-pass__button--inactive"
+              >
+                <span class="text--extra-small"
+                  >GATE CLOSES AT 10:00</span
+                >
+              </button>
+            </div>
+            <div class="boarding-pass__content__info">
+              <div
+                class="boarding-pass__content__info__upper flex-row flex-row--space-between flex-row--align-start"
+              >
+                <div class="flex-column flex-column--align-start">
+                  <h2 class="title title--large title--weak">LHR</h2>
+                  <span class="text--small grey"
+                    >London, England</span
+                  >
+                </div>
+                <div
+                  class="flex-row flex-row--align-center flex-row--center flex__gap-0-25"
+                >
+                  <div class="line"></div>
+                  <img
+                    class="boarding-pass__content__info__img"
+                    src="./assets/caminho 262.svg"
+                    alt="avião"
+                  />
+                  <div class="line"></div>
+                </div>
+                <div class="flex-column flex-column--align-end">
+                  <h2 class="title title--large title--weak">JFK</h2>
+                  <span class="text--small grey"
+                    >New York City, USA</span
+                  >
+                </div>
+              </div>
+              <div
+                class="boarding-pass__content__info__lower flex-column flex-column--center flex-column--center flex__gap-1"
+              >
+                <div
+                  class="flex-row flex-row--align-center flex-row--space-between flex__gap-1"
+                >
+                  <div class="flex-column flex-column--align-center">
+                    <span class="text--small grey">FLIGHT</span>
+                    <h4 class="text text--medium">VA2501</h4>
+                  </div>
+                  <div class="flex-column flex-column--align-center">
+                    <h4 class="text--small grey">SEAT</h4>
+                    <h4 class="text text--medium">35a</h4>
+                  </div>
+                  <div class="flex-column flex-column--align-center">
+                    <h4 class="text--small grey">GATE</h4>
+                    <h4 class="text text--medium">34B</h4>
+                  </div>
+                </div>
+                <div
+                  class="flex-row flex-row--align-center flex-row--space-between flex__gap-1"
+                >
+                  <div class="flex-column flex-column--align-center">
+                    <span class="text--small grey">DEPARTS</span>
+                    <h4 class="text text--medium">10.25</h4>
+                  </div>
+                  <button
+                    class="boarding-pass__content__info__button"
+                  >
+                    <span class="text--extra-small"
+                      >VIEW BOARDING PASS</span
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="plans">
+          <div class="plans__hotel flex-column flex__gap-1">
+            <h3 class="subtitle subtitle--medium purple">
+              Your Plans
+            </h3>
+            <button class="plans__hotel__add-button">
+              <span>+</span>
+            </button>
+            <div class="plans__hotel__card">
+              <div class="plans__hotel__card__img"></div>
+              <div class="plans__hotel__card__info">
+                <div
+                  class="flex-row flex-row--space-between flex-row--align-center flex__gap-1-25"
+                >
+                  <h2 class="title title--medium title--weak">
+                    The James Hotel
+                  </h2>
+                  <button class="plans__hotel__card__info__button">
+                    <span class="text text--medium">4 NIGHTS</span>
+                  </button>
+                </div>
+                <hr class="line" />
+                <div
+                  class="flex-row flex-row--start flex-row--align-center flex__gap-1"
+                >
+                  <img src="./assets/Places.svg" alt="localização" />
+                  <span class="text--small">
+                    36 W 38th St, New York, NY 10018
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="plans__transportation">
+            <div class="overlay overlay--stronger"></div>
+            <div
+              class="plans__transportation__content flex-column flex__gap-1-25"
+            >
+              <div
+                class="flex-row flex-column--align-start flex__gap-1"
+              >
+                <img
+                  class="plans__transportation__img"
+                  src="./assets/foto-sushi-1282.png"
+                  alt="Motorista"
+                />
+                <span class="text text--medium">
+                  Ryan from Corey Car Services is confirmed for pickup
+                  at <span class="green">15.40</span>.
+                </span>
+              </div>
+              <div class="flex-column flex-column--align-start">
+                <div class="plans__transportation__step">
+                  <div class="flex-row flex__gap-1">
+                    <div
+                      class="flex-column flex-column--align-center"
+                    >
+                      <div
+                        class="plans__transportation__step__circle"
+                      >
+                        <div
+                          class="plans__transportation__step__circle--active"
+                        ></div>
+                      </div>
+                      <div
+                        class="plans__transportation__step__circle__separator"
+                      ></div>
+                    </div>
+                    <div
+                      class="flex-column flex-column--align-start flex__gap-0-25"
+                    >
+                      <h5 class="subtitle">Pickup</h5>
+                      <span class="text text--small">
+                        John F. Kennedy International Airport
+                      </span>
+                    </div>
+                  </div>
+                  <button class="plans__transportation__step__edit">
+                    <img
+                      class="plans__transportation__step__edit__img"
+                      src="./assets//Compose.svg"
+                      alt="editar"
+                    />
+                  </button>
+                </div>
+
+                <div class="plans__transportation__step">
+                  <div class="flex-row flex__gap-1">
+                    <div class="plans__transportation__step__circle">
+                      <div
+                        class="plans__transportation__step__circle--inactive"
+                      ></div>
+                    </div>
+                    <div
+                      class="flex-column flex-column--align-start flex__gap-0-25"
+                    >
+                      <h5 class="subtitle">Destination</h5>
+                      <span class="text text--small">
+                        36 W 38th Street <br />
+                        New York, NY 10018
+                      </span>
+                    </div>
+                  </div>
+                  <button class="plans__transportation__step__edit">
+                    <img
+                      class="plans__transportation__step__edit__img"
+                      src="./assets//Compose.svg"
+                      alt="editar"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="plans__hotel__card">
+            <div
+              class="plans__hotel__card__img plans__hotel__card__img--secondary"
+            ></div>
+            <div class="plans__hotel__card__info">
+              <h2 class="title title--medium title--weak">
+                Lady Liberty Tour
+              </h2>
+              <hr class="line" />
+              <div
+                class="flex-row flex-row--start flex-row--align-center flex__gap-1"
+              >
+                <img
+                  src="./assets/Caminho 13.svg"
+                  alt="localização"
+                />
+                <span class="text--small">
+                  Thursday 4th Jan at 09.15
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="plans__request__card">
+            <div class="plans__request-card__content">
+              <div class="flex-column flex__gap-1">
+                <div
+                  class="plans__request-card__content__input-container"
+                >
+                  <span
+                    class="text text--small plans__request-card__content__input-message grey"
+                    >From</span
+                  >
+                  <input
+                    class="plans__request-card__content__input"
+                    type="text"
+                    placeholder="JFK Airport"
+                  />
+                </div>
+                <div
+                  class="plans__request-card__content__input-container"
+                >
+                  <span
+                    class="text text--small plans__request-card__content__input-message grey"
+                    >to</span
+                  >
+                  <input
+                    class="plans__request-card__content__input"
+                    type="text"
+                    placeholder="36 W 38th St, New York, NY 1008"
+                  />
+                </div>
+              </div>
+              <hr class="line" />
+              <div
+                class="flex-row flex-row--space-between flex-row--align-center flex__gap-1"
+              >
+                <div
+                  class="flex-column flex-column--align-center flex__gap-1"
+                >
+                  <div
+                    class="plans__request-card__content__icon plans__request-card__content__icon--purple-100"
+                  >
+                    <img
+                      src="./assets/ic_local_taxi_2.svg"
+                      alt="táxi"
+                    />
+                  </div>
+                  <div class="flex-column flex-column--align-center">
+                    <span class="text text--medium white"
+                      >$65-$105</span
+                    >
+                    <span class="text text--medium white">TAXI</span>
+                  </div>
+                </div>
+                <div
+                  class="flex-column flex-column--align-center flex__gap-1"
+                >
+                  <div
+                    class="plans__request-card__content__icon plans__request-card__content__icon--purple"
+                  >
+                    <img
+                      src="./assets/ic_directions_t.svg"
+                      alt="ônibus"
+                    />
+                  </div>
+                  <div class="flex-column flex-column--align-center">
+                    <span class="text text--medium grey"
+                      >$20-$30</span
+                    >
+                    <span class="text text--medium grey">SUBWAY</span>
+                  </div>
+                </div>
+                <div
+                  class="flex-column flex-column--align-center flex__gap-1"
+                >
+                  <div
+                    class="plans__request-card__content__icon plans__request-card__content__icon--blue"
+                  >
+                    <img
+                      src="./assets/ic_local_taxi_2.svg"
+                      alt="táxi"
+                    />
+                  </div>
+                  <div class="flex-column flex-column--align-center">
+                    <span class="text text--medium grey"
+                      >$45-$65</span
+                    >
+                    <span class="text text--medium grey">UBER</span>
+                  </div>
+                </div>
+                <div
+                  class="flex-column flex-column--align-center flex__gap-1"
+                >
+                  <div
+                    class="plans__request-card__content__icon plans__request-card__content__icon--grey"
+                  >
+                    <img
+                      src="./assets/ic_local_taxi_2.svg"
+                      alt="táxi"
+                    />
+                  </div>
+                  <div class="flex-column flex-column--align-center">
+                    <span class="text text--medium grey"
+                      >$45-$65
+                    </span>
+                    <span class="text text--medium grey">UBER</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="navbar">
+        <div class="navbar__content">
+          <img
+            src="./assets/Caminho 262.svg"
+            alt="avião"
+            class="navbar__content__img--larger navbar__content__img--active"
+          />
+          <img
+            src="assets/Caminho 13.svg"
+            alt="relógio"
+            class="navbar__content__img navbar__content__img--inactive"
+          />
+          <img
+            src="assets/União 1.svg"
+            alt="pessoas"
+            class="navbar__content__img navbar__content__img--inactive"
+          />
+          <img
+            src="assets/Heart.svg"
+            alt="likes"
+            class="navbar__content__img navbar__content__img--inactive"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.white {
+  color: var(--white);
+}
+.black {
+  color: var(--black);
+}
+.grey {
+  color: var(--grey);
+}
+.purple {
+  color: var(--purple);
+}
+.green {
+  color: var(--green);
+}
